@@ -74,13 +74,15 @@ export const CommunitySection = () => {
                   <p className="text-muted-foreground mb-6 leading-relaxed">{channel.description}</p>
 
                   {/* Button */}
-                  <Button 
-                    variant={channel.variant}
-                    size="lg"
-                    className="w-full"
-                  >
-                    {channel.buttonText}
-                  </Button>
+                  <a href={channel.name === 'Telegram' ? "https://t.me/donnipump" : channel.name === 'Twitter' ? "https://x.com/donnipump" : channel.name === 'Pump.fun' ? "https://pump.fun/coin/GK225ERcVTG2e1TQC9C8dnhP3LK5mH2Zur4CDvDoXk3b" : "#"} target="_blank" rel="noopener noreferrer" className="w-full">
+                    <Button 
+                      variant={channel.variant}
+                      size="lg"
+                      className="w-full"
+                    >
+                      {channel.buttonText}
+                    </Button>
+                  </a>
                 </div>
               </Card>
             ))}
@@ -122,12 +124,16 @@ export const CommunitySection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="pump" size="xl" className="text-lg px-8 py-4 h-auto">
-                🚀 Join Telegram Now!
-              </Button>
-              <Button variant="golden" size="xl" className="text-lg px-8 py-4 h-auto">
-                🐦 Follow on Twitter!
-              </Button>
+              <a href="https://t.me/donnipump" target="_blank" rel="noopener noreferrer">
+                <Button variant="pump" size="xl" className="text-lg px-8 py-4 h-auto">
+                  🚀 Join Telegram Now!
+                </Button>
+              </a>
+              <a href="https://x.com/donnipump" target="_blank" rel="noopener noreferrer">
+                <Button variant="golden" size="xl" className="text-lg px-8 py-4 h-auto">
+                  🐦 Follow on Twitter!
+                </Button>
+              </a>
             </div>
           </div>
 

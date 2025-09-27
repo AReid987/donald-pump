@@ -35,22 +35,28 @@ export const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold text-cosmic mb-4">Join the Pump Army</h4>
               <div className="space-y-3">
-                <Button variant="outline" size="sm" className="w-full justify-start">
-                  <MessageCircle className="w-4 h-4 mr-2" />
-                  Telegram
-                </Button>
-                <Button variant="outline" size="sm" className="w-full justify-start">
-                  <Twitter className="w-4 h-4 mr-2" />
-                  Twitter
-                </Button>
+                <a href="https://t.me/donnipump" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="sm" className="w-full justify-start">
+                    <MessageCircle className="w-4 h-4 mr-2" />
+                    Telegram
+                  </Button>
+                </a>
+                <a href="https://x.com/donnipump" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="sm" className="w-full justify-start">
+                    <Twitter className="w-4 h-4 mr-2" />
+                    Twitter
+                  </Button>
+                </a>
                 <Button variant="outline" size="sm" className="w-full justify-start">
                   <Users className="w-4 h-4 mr-2" />
                   Discord
                 </Button>
-                <Button variant="pump" size="sm" className="w-full justify-start">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Pump.fun
-                </Button>
+                <a href="https://pump.fun/coin/GK225ERcVTG2e1TQC9C8dnhP3LK5mH2Zur4CDvDoXk3b" target="_blank" rel="noopener noreferrer">
+                  <Button variant="pump" size="sm" className="w-full justify-start">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Pump.fun
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
